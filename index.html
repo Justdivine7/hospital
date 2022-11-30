@@ -30,11 +30,26 @@
       }
      .nav-item:hover{
       background-color:#6C63FF;
-      padding: 5px;
+      padding: 5px ;
       color:#fff;
       border-radius: 5px;
      }
+     .login{
+      background-color:#6C63FF ;
+      padding: 5px 8px;
+      color:#fff;
+      border-radius: 5px;
+     }
+     .login:hover{
+      padding: 5px 8px;
+      background-color: #1D2366;
+     }
      .dropdown-toggle{
+      margin-top: -7px;
+      color:#000;
+      transition:0.3s;
+     }
+     .dropdown-toggle:focus{
       color:#000;
      }
      .dropdown-toggle:hover{
@@ -100,14 +115,14 @@
             </div>
             <div class="offcanvas-body text-center ">
                 <p class="fs-5 mb-5">Home</p>
-                <div class="dropdown">
+                <div class="dropdown-center">
                   <button
                     class="btn btn-link p-0 mb-5 fs-5 text-white text-decoration-none dropdown-toggle"
                     data-bs-toggle="dropdown"
                   >
                     Services
                   </button>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu ">
                     <!-- <li><h5 class="dropdown-header">Header</h5></li> -->
                     <li class="dropdown-item">X-ray</li>
                     <li class="dropdown-item">Surgeries</li>
@@ -123,9 +138,9 @@
             </div>
         </div>
         <!-- OFFCANVAS TOGGLE-BUTTON -->
-        <div class="container-fluid bg-light d-flex justify-content-between d-lg-none" style="position:fixed; top:0px; right:0px; left;0px;">
+        <div class="container-fluid p-1 bg-light d-flex justify-content-between d-lg-none" style="position:fixed; top:0px; right:0px; left;0px;">
             <a class="m-2" href="#demo" data-bs-toggle="offcanvas"><img src="PNG/menu.png" alt="" style="width:35px ;"></a></body>
-            <img class="mt-2" src="PNG/quality.png" alt="" style="width:50px ;filter: invert(64%) sepia(66%) saturate(7496%) hue-rotate(228deg) brightness(100%) contrast(101%);">
+            <img class="m" src="PNG/quality.png" alt="" style="width:50px ;filter: invert(64%) sepia(66%) saturate(7496%) hue-rotate(228deg) brightness(100%) contrast(101%);">
         </div>
         <!-- NAVBAR -->
           <div class="container-fluid">
@@ -137,9 +152,9 @@
                 <li>
                   <a class="nav-item me-4 fs-5 text-decoration-none" href="#">Home</a>
                 </li>
-                <div class="dropdown">
+                <div class="dropdown-center">
                   <button
-                    class="btn btn-link p-0 mb-1 me-4 fs-5 text-decoration-none dropdown-toggle"
+                    class="btn btn-link me-4 fs-5 text-decoration-none dropdown-toggle"
                     data-bs-toggle="dropdown"
                   >
                     Services
@@ -170,7 +185,7 @@
                 </li>
                 <li>
                   <a
-                    class="nav-item me-5 fs-5 text-decoration-none"
+                    class="nav-item me-5 fs-5 text-decoration-none login"
                     class="btn btn-primary"
                     href="#"
                     >Login</a
@@ -204,7 +219,7 @@
       <section>
         <div class="container mt-5 mb-5 pt-5">
           <p class="display-5 fw-semibold mb-5">Explore by category</p>
-          <div class="d-flex justify-content-evenly flex-wrap ">
+          <div class="d-flex justify-content-evenly flex-wrap gap-2">
             <div
               class="col-lg-2 col-md-3 col-sm-6 p-2 border border-2 rounded text-center explore"
             >
@@ -326,7 +341,7 @@
             <i class="fa-solid fa-arrow-right" style="background:#6C63FF; padding:6px; border-radius:50%; color:#fff;"></i>
             </div>
           </div>
-          <div class="row gy-3">
+          <div class="row gy-5">
             <div class="col-lg-4 col-md-6 col-sm-6 col-6">
               <img class="w-100" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZG9jdG9yfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60" alt="">
               <p class="fs-5 text-secondary">01/05/2022</p>
